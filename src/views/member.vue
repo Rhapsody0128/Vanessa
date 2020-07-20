@@ -1,9 +1,7 @@
 <template>
   <div id="member">
     <h1 class="text-center mt-4 mb-4">會員專區</h1>
-    <div class="row m-0">
-      <div class="col p-0">
-        <form >
+        <form>
           <fieldset class="p-2 fieldset m-2 m-lg-5">
             <legend class="legend">註冊</legend>
             <div class="d-flex flex-wrap justify-content-center align-items-center mt-3">
@@ -84,7 +82,7 @@
                 電話格式不符
               </b-form-invalid-feedback>
             </div>
-            <div class="row m-0 justify-content-center align-items-center mt-5">
+            <div class="row justify-content-center align-items-center mt-5">
               <div class="col-6 col-lg-2 text-right ">
                 <b-button class="btn-success" v-b-modal.modal-1>會員須知</b-button>
                 <b-modal id="modal-1" title="會員須知">
@@ -99,7 +97,7 @@
                 <input  type="checkbox">我已經詳讀會員須知
               </div>
             </div>
-            <div class="row m-0 mt-5 justify-content-center align-items-center flex-nowrap">
+            <div class="row mt-5 justify-content-center align-items-center flex-nowrap">
               <div class="col-lg-2 text-right">
                 <button class="btn btn-primary">確認</button>
               </div>
@@ -109,10 +107,6 @@
             </div>
           </fieldset>
         </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-0">
         <form>
           <fieldset class="p-2 fieldset m-2 m-lg-5">
             <legend class="legend">登入</legend>
@@ -157,8 +151,6 @@
             </div>
           </fieldset>
         </form>
-      </div>
-    </div>
   </div>
 </template>
 <script>
