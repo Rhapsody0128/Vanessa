@@ -70,52 +70,62 @@ export default {
         {
           src: './images/1472660456_1e1841d24e_o.jpg',
           type: '前菜',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/1472660456_1e1841d24e_o.jpg',
           type: '前菜',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/36271782954_f7aa950180_o.jpg',
           type: '主餐',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/9677717700_3b10b4f206_o.jpg',
           type: '湯品',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         },
         {
           src: './images/9677717700_3b10b4f206_o.jpg',
           type: '湯品',
-          description: '毫無反應就是香腸毫無反應就是香腸'
+          description: '毫無反應就是香腸毫無反應就是香腸',
+          value: ''
         }
       ]
     }
