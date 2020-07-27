@@ -73,7 +73,7 @@ const routes = [
     meta: {
       transition: 'fade-in-up',
       login: true,
-      title: '會員專區'
+      title: '會員服務'
     }
   }
 ]

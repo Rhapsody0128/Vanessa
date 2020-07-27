@@ -33,7 +33,7 @@
                 type="password"
                 placeholder="請輸入至少8個字"
                 trim
-              >></b-form-input>
+              ></b-form-input>
               <b-form-text class="col-6"></b-form-text>
             </div>
           </div>
@@ -111,6 +111,7 @@
                 id="repassword"
                 v-model="repassword"
                 :state="repasswordState"
+                type="password"
                 placeholder="請輸入至少8個字"
                 trim
               >></b-form-input>
@@ -226,30 +227,39 @@ export default {
         const rand2 = Math.floor(Math.random() * 100)
         const judge = prompt(`${rand}+${rand2}=?`)
         const ans = (rand + rand2).toString()
-        console.log(ans)
-        if (judge === ans) {
-          this.axios.post('http://localhost:3000/registering', {
-            name: this.name,
-            account: this.account,
-            password: this.password,
-            phone: this.phone,
-            email: this.email
-          })
-            .then(res => {
-              if (res.data.success) {
-                this.$swal('成功', '註冊成功', 'success')
-                this.name = ''
-                this.account = ''
-                this.password = ''
-                this.repassword = ''
-                this.phone = ''
-                this.email = ''
-              } else {
-                this.$swal('錯誤', `${res.data.message}`, 'error')
-              }
+        if (this.account.length > 7 &&
+              this.password.length > 7 &&
+              this.password === this.repassword &&
+              parseInt(this.phone) > 5 &&
+              this.email.includes('@')) {
+          if (judge === ans) {
+            this.axios.post('http://localhost:3000/registering', {
+              name: this.name,
+              account: this.account,
+              password: this.password,
+              phone: this.phone,
+              email: this.email
             })
+              .then(res => {
+                if (res.data.success) {
+                  this.$swal('成功', '註冊成功', 'success')
+                  this.name = ''
+                  this.account = ''
+                  this.password = ''
+                  this.repassword = ''
+                  this.phone = ''
+                  this.email = ''
+                } else {
+                  this.$swal('錯誤', `${res.data.message}`, 'error')
+                }
+              }).catch(error => {
+                this.$swal('錯誤', `${error.message}`, 'error')
+              })
+          } else {
+            this.$swal('錯誤', '驗證錯誤', 'error')
+          }
         } else {
-          this.$swal('錯誤', '驗證錯誤', 'error')
+          this.$swal('錯誤', '輸入欄位錯誤哦', 'error')
         }
       } else {
         this.$swal('未勾選', '請先閱讀會員須知', 'question')
@@ -261,11 +271,13 @@ export default {
         .then(res => {
           if (res.data.success) {
             this.$swal('成功', '登入成功', 'success')
-            this.$store.commit('login', res.data.name)
+            this.$store.commit('login', [res.data.name, res.data.account])
             this.$router.push('/member_login')
           } else {
-            alert(res.data.message)
+            this.$swal('錯誤', `${res.data.message}`, 'error')
           }
+        }).catch(error => {
+          this.$swal('錯誤', `${error.message}`, 'error')
         })
     }
   }
