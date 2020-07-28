@@ -179,7 +179,7 @@ export default {
             this.$swal('錯誤', `${res.data.message}`, 'error')
           }
         }).catch(error => {
-          this.$swal('錯誤', `${error.message}`, 'error')
+          this.$swal('錯誤', `${error.response.data.message}`, 'error')
         })
     },
     cancelorder () {
@@ -199,7 +199,7 @@ export default {
             this.$swal('錯誤', `${res.data.message}`, 'error')
           }
         }).catch(error => {
-          this.$swal('錯誤', `${error.message}`, 'error')
+          this.$swal('錯誤', `${error.response.data.message}`, 'error')
         })
     }
   },

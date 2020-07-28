@@ -32,7 +32,6 @@
             :options="flavours"
             name="flavors"
             class="ml-4 d-lg-flex flex-lg-nowrap flex-lg-column"
-            switches
             size="lg"
             :stacked='ScreenWidth>768'
           ></b-form-checkbox-group>
