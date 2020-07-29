@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["back_story"],{ba10:function(e,t,n){"use strict";n.r(t);var r=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{attrs:{id:"back_order"}},[n("h1",[e._v("ggg")])])}],c=n("2877"),s={},l=Object(c["a"])(s,r,a,!1,null,null,null);t["default"]=l.exports}}]);
+//# sourceMappingURL=back_story.26aa3060.js.map

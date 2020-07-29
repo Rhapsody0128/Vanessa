@@ -1,11 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9686c1f585f552a5ee18",
-    "url": "css/app.38792d96.css"
+    "revision": "d63e3a999b4870bf28e8",
+    "url": "css/app.d9bafa70.css"
   },
   {
-    "revision": "0cffa3fcfdc6a578aec5",
-    "url": "css/back.6ff7315f.css"
+    "revision": "7962606c07f5bf7d2b71",
+    "url": "css/back_menu.050d2011.css"
+  },
+  {
+    "revision": "d99e9e4e463a4da7e3a0",
+    "url": "css/back_order.c7406965.css"
   },
   {
     "revision": "71f2aa046c450929db50",
@@ -16,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/member.34444efe.css"
   },
   {
-    "revision": "2bfacea941b8aba6033b",
+    "revision": "33f366647ef916f02419",
     "url": "css/member_login.34444efe.css"
   },
   {
@@ -244,16 +248,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/others/box.png"
   },
   {
-    "revision": "df8aa01d7e6e70bf1ad2aa57eb4fcd77",
+    "revision": "c763674eabb8042cf90e5db67a992d94",
     "url": "index.html"
   },
   {
-    "revision": "9686c1f585f552a5ee18",
-    "url": "js/app.3ff32c6f.js"
+    "revision": "d63e3a999b4870bf28e8",
+    "url": "js/app.3f719a69.js"
   },
   {
-    "revision": "0cffa3fcfdc6a578aec5",
-    "url": "js/back.faca62a3.js"
+    "revision": "2c74da8dc3f9ec6c3aea",
+    "url": "js/back.0699760a.js"
+  },
+  {
+    "revision": "c5514bc9ae012093fa03",
+    "url": "js/back_hire.3b6e375d.js"
+  },
+  {
+    "revision": "8881d4423757684eeeba",
+    "url": "js/back_member.3d9c7af4.js"
+  },
+  {
+    "revision": "7962606c07f5bf7d2b71",
+    "url": "js/back_menu.cb5e908d.js"
+  },
+  {
+    "revision": "65979e328235bbd459d5",
+    "url": "js/back_news.28cfdad6.js"
+  },
+  {
+    "revision": "d99e9e4e463a4da7e3a0",
+    "url": "js/back_order.4ba6aed7.js"
+  },
+  {
+    "revision": "d59b510289fbb7e2d45a",
+    "url": "js/back_story.26aa3060.js"
   },
   {
     "revision": "71f2aa046c450929db50",
@@ -268,8 +296,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/member.b0b705c0.js"
   },
   {
-    "revision": "2bfacea941b8aba6033b",
-    "url": "js/member_login.21848f0c.js"
+    "revision": "33f366647ef916f02419",
+    "url": "js/member_login.ef5176a2.js"
   },
   {
     "revision": "72c6c8e247b8bbde6440",
