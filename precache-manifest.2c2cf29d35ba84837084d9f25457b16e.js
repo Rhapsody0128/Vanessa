@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a2383f951fe2a84c223",
-    "url": "css/app.8a9b886f.css"
+    "revision": "9686c1f585f552a5ee18",
+    "url": "css/app.38792d96.css"
   },
   {
-    "revision": "8d30f336abd0f6d78c21",
+    "revision": "0cffa3fcfdc6a578aec5",
     "url": "css/back.6ff7315f.css"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/member.34444efe.css"
   },
   {
-    "revision": "d4cef857e7a9b8911fce",
+    "revision": "2bfacea941b8aba6033b",
     "url": "css/member_login.34444efe.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/news.8a4adcb2.css"
   },
   {
-    "revision": "98c773d073847b583c03",
-    "url": "css/story.2e4a9fa0.css"
+    "revision": "fc317d1ffd9ad4cafc20",
+    "url": "css/story.f3ba2584.css"
   },
   {
     "revision": "df74306e04ad63895df4caeacc0847d7",
@@ -244,16 +244,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/others/box.png"
   },
   {
-    "revision": "b5af697f6ad41d935e8e3511cef66517",
+    "revision": "df8aa01d7e6e70bf1ad2aa57eb4fcd77",
     "url": "index.html"
   },
   {
-    "revision": "5a2383f951fe2a84c223",
-    "url": "js/app.c37f6329.js"
+    "revision": "9686c1f585f552a5ee18",
+    "url": "js/app.3ff32c6f.js"
   },
   {
-    "revision": "8d30f336abd0f6d78c21",
-    "url": "js/back.0f8a40c1.js"
+    "revision": "0cffa3fcfdc6a578aec5",
+    "url": "js/back.faca62a3.js"
   },
   {
     "revision": "71f2aa046c450929db50",
@@ -268,8 +268,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/member.b0b705c0.js"
   },
   {
-    "revision": "d4cef857e7a9b8911fce",
-    "url": "js/member_login.ee5447f9.js"
+    "revision": "2bfacea941b8aba6033b",
+    "url": "js/member_login.21848f0c.js"
   },
   {
     "revision": "72c6c8e247b8bbde6440",
@@ -284,8 +284,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/news.4397f3d1.js"
   },
   {
-    "revision": "98c773d073847b583c03",
-    "url": "js/story.1a027676.js"
+    "revision": "fc317d1ffd9ad4cafc20",
+    "url": "js/story.320711e1.js"
   },
   {
     "revision": "f7f25e29250e22e93151f5de6e361858",
