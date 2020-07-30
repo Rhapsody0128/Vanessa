@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d63e3a999b4870bf28e8",
+    "revision": "6dabf39d1c8870dd3112",
     "url": "css/app.d9bafa70.css"
   },
   {
-    "revision": "7962606c07f5bf7d2b71",
-    "url": "css/back_menu.050d2011.css"
+    "revision": "2f855ccf8e2d321bca31",
+    "url": "css/back_menu.8443687d.css"
   },
   {
-    "revision": "d99e9e4e463a4da7e3a0",
+    "revision": "5798523eb615f12f0291",
     "url": "css/back_order.c7406965.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/menu.0dac18e7.css"
   },
   {
-    "revision": "7c4cfba44ce67cfacbb6",
-    "url": "css/news.8a4adcb2.css"
+    "revision": "6695f2172fbf2408256e",
+    "url": "css/news.002d6ce3.css"
   },
   {
     "revision": "fc317d1ffd9ad4cafc20",
@@ -248,12 +248,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/others/box.png"
   },
   {
-    "revision": "c763674eabb8042cf90e5db67a992d94",
+    "revision": "455fac7452abac2ced588ede0341f727",
     "url": "index.html"
   },
   {
-    "revision": "d63e3a999b4870bf28e8",
-    "url": "js/app.3f719a69.js"
+    "revision": "6dabf39d1c8870dd3112",
+    "url": "js/app.880070ac.js"
   },
   {
     "revision": "2c74da8dc3f9ec6c3aea",
@@ -268,16 +268,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/back_member.3d9c7af4.js"
   },
   {
-    "revision": "7962606c07f5bf7d2b71",
-    "url": "js/back_menu.cb5e908d.js"
+    "revision": "2f855ccf8e2d321bca31",
+    "url": "js/back_menu.50e0827d.js"
   },
   {
     "revision": "65979e328235bbd459d5",
     "url": "js/back_news.28cfdad6.js"
   },
   {
-    "revision": "d99e9e4e463a4da7e3a0",
-    "url": "js/back_order.4ba6aed7.js"
+    "revision": "5798523eb615f12f0291",
+    "url": "js/back_order.8561a417.js"
   },
   {
     "revision": "d59b510289fbb7e2d45a",
@@ -308,8 +308,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/menu~story.a6859d71.js"
   },
   {
-    "revision": "7c4cfba44ce67cfacbb6",
-    "url": "js/news.4397f3d1.js"
+    "revision": "6695f2172fbf2408256e",
+    "url": "js/news.dc97c9ab.js"
   },
   {
     "revision": "fc317d1ffd9ad4cafc20",
