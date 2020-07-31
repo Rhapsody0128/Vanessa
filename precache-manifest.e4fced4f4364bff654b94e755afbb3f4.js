@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "887c7a3beb79a24e4cc1",
+    "revision": "965b3778b6cb5cfe3a7d",
     "url": "css/app.d9bafa70.css"
   },
   {
-    "revision": "f6f84d2c2b0f1486e5f3",
-    "url": "css/back_member.c7406965.css"
+    "revision": "1eed4b63da61bca75ec9",
+    "url": "css/back_member.59ee2372.css"
   },
   {
-    "revision": "a1175f973daa2874881e",
-    "url": "css/back_menu.a7dbe390.css"
+    "revision": "505549d55d4a943317ae",
+    "url": "css/back_menu.380e3ecf.css"
   },
   {
     "revision": "6386c6023cfbacc03cd6",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/member_login.4243e8ab.css"
   },
   {
-    "revision": "72c6c8e247b8bbde6440",
-    "url": "css/menu.0dac18e7.css"
+    "revision": "55195da54ecfb14dc123",
+    "url": "css/menu.fa3c346d.css"
   },
   {
     "revision": "0783d042c81847055cbb",
@@ -256,12 +256,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/others/box.png"
   },
   {
-    "revision": "5d6c072689aa31886a04080b3d052b27",
+    "revision": "fa480049f8ad8b077fb25afc248254d0",
     "url": "index.html"
   },
   {
-    "revision": "887c7a3beb79a24e4cc1",
-    "url": "js/app.651f354c.js"
+    "revision": "965b3778b6cb5cfe3a7d",
+    "url": "js/app.bf2eb56b.js"
   },
   {
     "revision": "cf1054f82c6d7f183513",
@@ -272,12 +272,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/back_hire.3b6e375d.js"
   },
   {
-    "revision": "f6f84d2c2b0f1486e5f3",
-    "url": "js/back_member.83b00217.js"
+    "revision": "1eed4b63da61bca75ec9",
+    "url": "js/back_member.357f5b27.js"
   },
   {
-    "revision": "a1175f973daa2874881e",
-    "url": "js/back_menu.daaf189b.js"
+    "revision": "505549d55d4a943317ae",
+    "url": "js/back_menu.dd02fa5d.js"
   },
   {
     "revision": "6386c6023cfbacc03cd6",
@@ -304,8 +304,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/member_login.b30b3f14.js"
   },
   {
-    "revision": "72c6c8e247b8bbde6440",
-    "url": "js/menu.9aa7a08d.js"
+    "revision": "55195da54ecfb14dc123",
+    "url": "js/menu.761273ee.js"
   },
   {
     "revision": "da6bd7f868e0398913cd",
