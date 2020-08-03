@@ -19,6 +19,9 @@ export default new Vuex.Store({
     },
     account (state) {
       return state.account
+    },
+    cart (state) {
+      return JSON.parse(JSON.stringify(state.cart))
     }
   },
   mutations: {

@@ -3,7 +3,7 @@
     <h1 class="text-center mt-4 mb-4">後臺管理</h1>
     <div class="container">
       <div class="row justify-content-center">
-        <vs-button class="mb-5" @click="active=!active" color="primary" type="filled">編輯</vs-button>
+        <vs-button class="mb-5" @click="active=!active" color="primary" type="filled">管理</vs-button>
       </div>
       <vs-sidebar
         position-right
@@ -26,8 +26,8 @@
         <vs-sidebar-item to="/back_news"  index="3">
           <h4>最新消息</h4>
         </vs-sidebar-item>
-        <vs-sidebar-item to="/back_hire"  index="4">
-          <h4>招募資訊</h4>
+        <vs-sidebar-item to="/back_market"  index="4">
+          <h4>購物廣場</h4>
         </vs-sidebar-item>
         <vs-divider position="left">資料管理</vs-divider>
         <vs-sidebar-item to="/back_order"  index="5">
@@ -36,8 +36,12 @@
         <vs-sidebar-item to="/back_member"  index="6">
           <h4>會員資料</h4>
         </vs-sidebar-item>
+        <vs-sidebar-item to="/back_cart"  index="7">
+          <h4>訂單資料</h4>
+        </vs-sidebar-item>
       </vs-sidebar>
     </div>
+    <hr>
     <div class="container">
       <router-view></router-view>
     </div>
