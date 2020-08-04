@@ -333,7 +333,7 @@ export default {
             },
             title: data.title,
             description: data.description,
-            src: process.env.VUE_APP_APIUR + '/images/' + data.src,
+            src: process.env.VUE_APP_APIURL + '/images/' + data.src,
             id: data.id
           }
         })
