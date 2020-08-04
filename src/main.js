@@ -10,6 +10,7 @@ import VuePageTransition from 'vue-page-transition'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueSweetalert2 from 'vue-sweetalert2'
+import dotenv from 'dotenv'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -23,6 +24,7 @@ import 'sweetalert2/dist/sweetalert2.min.css'
 
 library.add(faFacebook, faLine, faInstagram)
 
+dotenv.config()
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VCalendar)
