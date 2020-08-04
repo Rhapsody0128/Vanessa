@@ -47,7 +47,7 @@ app.use(session({
 }))
 // ---檔案上傳FTP
 let storage
-if (process.env.FTP === false) {
+if (process.env.FTP === 'false') {
   storage = multer.diskStorage({
     destination (req, file, cb) {
       cb(null, './images')
@@ -97,7 +97,8 @@ app.use(cors({
     if (origin === undefined) {
       callback(null, true)
     } else {
-      if (process.env.ALLOW_CORS === true) {
+      console.log(process.env.ALLOW_CORS)
+      if (process.env.ALLOW_CORS === 'true') {
         // 開發環境，允許
         callback(null, true)
       } else if (origin.includes('github')) {
@@ -113,7 +114,7 @@ app.use(cors({
 }))
 // ---獲取圖片
 app.get('/images/:src', async (req, res) => {
-  if (process.env.FTP === false) {
+  if (process.env.FTP === 'false') {
     const path = process.cwd() + '/images/' + req.params.src
     const exists = fs.existsSync(path)
     if (exists) {
@@ -367,12 +368,15 @@ app.post('/allorder', async (req, res) => {
 })
 // ---菜單上傳
 app.post('/addmeal', async (req, res) => {
+  console.log('addmeal')
   if (!req.headers['content-type'].includes('multipart/form-data')) {
     res.status(400)
     res.send({ success: false, message: '格式不符' })
     return
   }
+  console.log('format ok')
   upload.single('src')(req, res, async error => {
+    console.log('upload single')
     if (error instanceof multer.MulterError) {
       // 上傳錯誤
       let message = ''
@@ -384,12 +388,14 @@ app.post('/addmeal', async (req, res) => {
       res.status(400)
       res.send({ success: false, message })
     } else if (error) {
+      console.log(error)
       res.status(500)
       res.send({ success: false, message: '伺服器錯誤' })
     } else {
+      console.log('aaaa')
       try {
         let src = ''
-        if (process.env.FTP === false) {
+        if (process.env.FTP === 'false') {
           src = req.file.filename
         } else {
           src = path.basename(req.file.path)
@@ -404,6 +410,7 @@ app.post('/addmeal', async (req, res) => {
             description: req.body.description
           }
         )
+        console.log(result)
         res.status(200)
         res.send({ success: true, message: '', result })
       } catch (error) {
@@ -447,7 +454,7 @@ app.post('/specialmeal', async (req, res) => {
     } else {
       try {
         let src = ''
-        if (process.env.FTP === false) {
+        if (process.env.FTP === 'false') {
           src = req.file.filename
         } else {
           src = path.basename(req.file.path)
@@ -587,7 +594,7 @@ app.post('/addevent', async (req, res) => {
       res.send({ success: false, message: '伺服器錯誤' })
     } else {
       let src = ''
-      if (process.env.FTP === false) {
+      if (process.env.FTP === 'false') {
         src = req.file.filename
       } else {
         src = path.basename(req.file.path)
@@ -723,7 +730,7 @@ app.post('/additem', async (req, res) => {
       res.send({ success: false, message: '伺服器錯誤' })
     } else {
       let src = ''
-      if (process.env.FTP === false) {
+      if (process.env.FTP === 'false') {
         src = req.file.filename
       } else {
         src = path.basename(req.file.path)
