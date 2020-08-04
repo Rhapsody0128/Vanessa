@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5eb2bec4570d02c7781c",
+    "revision": "e0644e02c7ac5bfb27d8",
     "url": "css/app.43f9d7af.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/back_market.bd18f64c.css"
   },
   {
-    "revision": "8427d666207be0ab0a34",
-    "url": "css/back_member.214ac17b.css"
+    "revision": "9e4fdd60bc527af10229",
+    "url": "css/back_member.0c25f78f.css"
   },
   {
     "revision": "fe358575a98fe903e33e",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/member_login.5b165428.css"
   },
   {
-    "revision": "18fa42c75af5652c49ae",
-    "url": "css/menu.d5b8f621.css"
+    "revision": "7e1a3ea06982636ffb5a",
+    "url": "css/menu.c328fe07.css"
   },
   {
     "revision": "42f3ec6ffe9943272828",
@@ -272,12 +272,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/others/box.png"
   },
   {
-    "revision": "87f8a13c82c4b6c92b2ebaa70ff99e9b",
+    "revision": "3719487ca6e9f614e7e90cb3d277e734",
     "url": "index.html"
   },
   {
-    "revision": "5eb2bec4570d02c7781c",
-    "url": "js/app.aa110d4e.js"
+    "revision": "e0644e02c7ac5bfb27d8",
+    "url": "js/app.4cdef6d0.js"
   },
   {
     "revision": "53f5feac697d8a70a95b",
@@ -292,8 +292,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/back_market.b338ddb0.js"
   },
   {
-    "revision": "8427d666207be0ab0a34",
-    "url": "js/back_member.9142f4b2.js"
+    "revision": "9e4fdd60bc527af10229",
+    "url": "js/back_member.6de9f7af.js"
   },
   {
     "revision": "fe358575a98fe903e33e",
@@ -332,8 +332,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/member_login.8c678166.js"
   },
   {
-    "revision": "18fa42c75af5652c49ae",
-    "url": "js/menu.ca19fd10.js"
+    "revision": "7e1a3ea06982636ffb5a",
+    "url": "js/menu.69d32c1c.js"
   },
   {
     "revision": "da6bd7f868e0398913cd",
