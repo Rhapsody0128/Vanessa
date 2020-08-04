@@ -310,7 +310,7 @@ export default {
         title: '已順利更變',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/changecart', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/changecart', {
         number: this.changecart.number,
         id: this.changecart.id
       })
@@ -336,7 +336,7 @@ export default {
         title: '已順利刪除',
         text: '已順利刪除所選項目'
       })
-      this.axios.post('http://localhost:3000/deletecart', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/deletecart', {
         id: this.changecart.id
       })
         .then(res => {
@@ -371,7 +371,7 @@ export default {
               this.block = true
               this.cart.forEach(data => {
                 if (data.buying) {
-                  this.axios.post('http://localhost:3000/buyingcart', {
+                  this.axios.post(process.env.VUE_APP_APIURL + '/buyingcart', {
                     id: data.id,
                     buying: false
                   })
@@ -392,7 +392,7 @@ export default {
                   this.cartorder.src.push(data.src)
                 }
               })
-              this.axios.post('http://localhost:3000/cartorder', this.cartorder)
+              this.axios.post(process.env.VUE_APP_APIURL + '/cartorder', this.cartorder)
                 .then(res => {
                   this.$swal('確認', `已收到您的訂單，您的訂單編號為${res.data.result.id}`, 'success')
                   this.cartorder = {
@@ -434,7 +434,7 @@ export default {
           if (judge.length > 0) {
             this.cart.forEach(data => {
               if (data.buying) {
-                this.axios.post('http://localhost:3000/clearcart', { account: this.account, buying: data.buying })
+                this.axios.post(process.env.VUE_APP_APIURL + '/clearcart', { account: this.account, buying: data.buying })
                   .then(res => {
                     this.$swal('完成', '已清空購物車', 'success')
                   }).catch(error => {
@@ -501,7 +501,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/getusercartorder', {
+    this.axios.post(process.env.VUE_APP_APIURL + '/getusercartorder', {
       account: this.account
     })
       .then(res => {
@@ -509,7 +509,7 @@ export default {
       }).catch(error => {
         this.$swal('錯誤', `${error.response.data.message}`, 'error')
       })
-    this.axios.post('http://localhost:3000/getusercart', {
+    this.axios.post(process.env.VUE_APP_APIURL + '/getusercart', {
       account: this.account
     })
       .then(res => {

@@ -148,7 +148,7 @@ export default {
         fd.append('description', this.description)
         fd.append('stock', this.stock)
 
-        this.axios.post('http://localhost:3000/additem', fd, {
+        this.axios.post(process.env.VUE_APP_APIURL + '/additem', fd, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
@@ -182,7 +182,7 @@ export default {
         title: '已順利更變',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/changeitem', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/changeitem', {
         title: this.changeitem.title,
         value: this.changeitem.value,
         type: this.changeitem.type,
@@ -212,7 +212,7 @@ export default {
         title: '已順利刪除',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/deleteitem', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/deleteitem', {
         id: this.changeitem.id
       })
         .then(res => {
@@ -223,7 +223,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allmarket')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allmarket')
       .then(res => {
         this.allmarket = res.data.result.map(data => {
           return {
@@ -231,7 +231,7 @@ export default {
             value: data.value,
             type: data.type,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src,
+            src: process.env.VUE_APP_APIURL + '/images/' + data.src,
             stock: data.stock,
             id: data.id
           }

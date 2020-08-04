@@ -77,13 +77,13 @@ export default {
           text: '已順利刪除所選項目'
         })
         this.selected.forEach(data => {
-          this.axios.post('http://localhost:3000/cancelorder', {
+          this.axios.post(process.env.VUE_APP_APIURL + '/cancelorder', {
             account: data.account
           })
             .then(res => {
               if (res.data.success) {
                 this.$swal('成功', '取消成功', 'success')
-                this.axios.post('http://localhost:3000/allorder')
+                this.axios.post(process.env.VUE_APP_APIURL + '/allorder')
                   .then(res => {
                     this.datas = res.data.result
                   })
@@ -98,7 +98,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allorder')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allorder')
       .then(res => {
         this.datas = res.data.result
       }).catch(error => {

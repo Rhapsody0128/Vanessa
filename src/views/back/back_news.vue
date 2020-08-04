@@ -244,7 +244,7 @@ export default {
           end: new Date()
         }
 
-        this.axios.post('http://localhost:3000/addevent', fd, {
+        this.axios.post(process.env.VUE_APP_APIURL + '/addevent', fd, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
@@ -273,7 +273,7 @@ export default {
         text: '已順利所選項目'
       })
       console.log(changedatesformat(this.changeevent.dates.start, this.changeevent.dates.end)[0][1])
-      this.axios.post('http://localhost:3000/changeevent', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/changeevent', {
         title: this.changeevent.title,
         startyear: changedatesformat(this.changeevent.dates.start, this.changeevent.dates.end)[0][2],
         startmonth: changedatesformat(this.changeevent.dates.start, this.changeevent.dates.end)[0][0],
@@ -307,7 +307,7 @@ export default {
         title: '已順利刪除',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/deleteevent', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/deleteevent', {
         id: this.changeevent.id
       })
         .then(res => {
@@ -319,7 +319,7 @@ export default {
   },
 
   mounted: function () {
-    this.axios.post('http://localhost:3000/allevent')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allevent')
       .then(res => {
         this.allevent = res.data.result.map(data => {
           return {
@@ -333,7 +333,7 @@ export default {
             },
             title: data.title,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src,
+            src: process.env.VUE_APP_APIUR + '/images/' + data.src,
             id: data.id
           }
         })

@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allevent')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allevent')
       .then(res => {
         this.allevent = res.data.result.map(data => {
           return {
@@ -58,7 +58,7 @@ export default {
             },
             title: data.title,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src
+            src: 'process.env.VUE_APP_APIURL' + '/images/' + data.src
           }
         })
       })

@@ -82,7 +82,7 @@ export default {
             cancelButtonText: '取消'
           }).then((result) => {
             if (result.value) {
-              this.axios.post('http://localhost:3000/addcart', {
+              this.axios.post(process.env.VUE_APP_APIURL + '/addcart', {
                 itemid: id,
                 account: this.account,
                 title: title,
@@ -101,7 +101,7 @@ export default {
             }
           })
         } else {
-          this.axios.post('http://localhost:3000/addcart', {
+          this.axios.post(process.env.VUE_APP_APIURL + '/addcart', {
             itemid: id,
             account: this.account,
             title: title,
@@ -147,7 +147,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allmarket')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allmarket')
       .then(res => {
         this.market = res.data.result.map(data => {
           return {
@@ -155,7 +155,7 @@ export default {
             value: data.value,
             type: data.type,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src,
+            src: process.env.VUE_APP_APIURL + '/images/' + data.src,
             stock: data.stock,
             popupActivo: false,
             id: data.id

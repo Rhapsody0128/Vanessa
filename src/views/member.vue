@@ -273,7 +273,7 @@ export default {
           const ans = (rand + rand2).toString()
           const judge = prompt(`${rand}+${rand2}=?`)
           if (judge === ans) {
-            this.axios.post('http://localhost:3000/registering', {
+            this.axios.post(process.env.VUE_APP_APIURL + '/registering', {
               name: this.name,
               account: this.account,
               password: this.password,
@@ -304,7 +304,7 @@ export default {
       }
     },
     login () {
-      this.axios.post('http://localhost:3000/login', { account: this.loginaccount, password: this.loginpassword })
+      this.axios.post(process.env.VUE_APP_APIURL + '/login', { account: this.loginaccount, password: this.loginpassword })
         .then(res => {
           if (res.data.success) {
             this.$swal('成功', '登入成功', 'success')

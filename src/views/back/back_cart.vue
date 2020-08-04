@@ -160,14 +160,14 @@ export default {
           text: '已順利結案所選項目'
         })
         this.selected.forEach(data => {
-          this.axios.post('http://localhost:3000/finishcartorder', {
+          this.axios.post(process.env.VUE_APP_APIURL + '/finishcartorder', {
             id: data.id,
             finish: true
           })
             .then(res => {
               if (res.data.success) {
                 this.$swal('成功', '結案成功', 'success')
-                this.axios.post('http://localhost:3000/allcartorder')
+                this.axios.post(process.env.VUE_APP_APIURL + '/allcartorder')
                   .then(res => {
                     this.datas = res.data.result
                   })
@@ -203,13 +203,13 @@ export default {
           text: '已順利刪除所選項目'
         })
         this.selected.forEach(data => {
-          this.axios.post('http://localhost:3000/cancelcartorder', {
+          this.axios.post(process.env.VUE_APP_APIURL + '/cancelcartorder', {
             id: data.id
           })
             .then(res => {
               if (res.data.success) {
                 this.$swal('成功', '刪除成功', 'success')
-                this.axios.post('http://localhost:3000/allcartorder')
+                this.axios.post(process.env.VUE_APP_APIURL + '/allcartorder')
                   .then(res => {
                     this.datas = res.data.result
                   })
@@ -235,7 +235,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allcartorder')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allcartorder')
       .then(res => {
         this.datas = res.data.result
         console.log(this.datas)

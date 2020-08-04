@@ -195,7 +195,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allmenu')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allmenu')
       .then(res => {
         this.menu = res.data.result.map(data => {
           return {
@@ -203,7 +203,7 @@ export default {
             value: data.value,
             type: data.type,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src,
+            src: 'process.env.VUE_APP_APIURL' + '/images/' + data.src,
             popupActivo: false
           }
         })

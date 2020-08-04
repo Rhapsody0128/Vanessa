@@ -189,9 +189,9 @@ export default {
         fd.append('type', this.type)
         fd.append('src', this.src)
         fd.append('description', this.description)
-
+        console.log(this.src)
         if (this.type === '特餐') {
-          this.axios.post('http://localhost:3000/specialmeal', fd, {
+          this.axios.post(process.env.VUE_APP_APIURL + '/specialmeal', fd, {
             headers: {
               'Content-Type': 'multipart/form-data'
             }
@@ -202,7 +202,7 @@ export default {
               this.$swal('錯誤', `${error.response.data.message}`, 'error')
             })
         } else {
-          this.axios.post('http://localhost:3000/addmeal', fd, {
+          this.axios.post(process.env.VUE_APP_APIURL + '/addmeal', fd, {
             headers: {
               'Content-Type': 'multipart/form-data'
             }
@@ -236,7 +236,7 @@ export default {
         title: '已順利更變',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/changemeal', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/changemeal', {
         title: this.changemeal.title,
         value: this.changemeal.value,
         type: this.changemeal.type,
@@ -265,7 +265,7 @@ export default {
         title: '已順利刪除',
         text: '已順利所選項目'
       })
-      this.axios.post('http://localhost:3000/deletemeal', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/deletemeal', {
         id: this.changemeal.id
       })
         .then(res => {
@@ -276,7 +276,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/allmenu')
+    this.axios.post(process.env.VUE_APP_APIURL + '/allmenu')
       .then(res => {
         this.allmenu = res.data.result.map(data => {
           return {
@@ -284,7 +284,7 @@ export default {
             value: data.value,
             type: data.type,
             description: data.description,
-            src: 'http://localhost:3000' + '/images/' + data.src,
+            src: process.env.VUE_APP_APIURL + '/images/' + data.src,
             id: data.id
           }
         })

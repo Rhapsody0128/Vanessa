@@ -154,7 +154,7 @@ export default {
       }
     },
     order () {
-      this.axios.post('http://localhost:3000/order', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/order', {
         account: this.account,
         name: this.name,
         phone: this.phone,
@@ -180,7 +180,7 @@ export default {
         })
     },
     cancelorder () {
-      this.axios.post('http://localhost:3000/cancelorder', {
+      this.axios.post(process.env.VUE_APP_APIURL + '/cancelorder', {
         account: this.account
       })
         .then(res => {
@@ -240,7 +240,7 @@ export default {
     }
   },
   mounted: function () {
-    this.axios.post('http://localhost:3000/checkorder', {
+    this.axios.post(process.env.VUE_APP_APIURL + '/checkorder', {
       account: this.account
     })
       .then(res => {
@@ -255,7 +255,7 @@ export default {
           console.log('ordered not found')
         }
       })
-    this.axios.post('http://localhost:3000/getuserinfo', {
+    this.axios.post(process.env.VUE_APP_APIURL + '/getuserinfo', {
       account: this.account
     })
       .then(res => {
