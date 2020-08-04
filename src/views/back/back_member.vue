@@ -99,7 +99,7 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus">
 .text{
   font-size 0.5rem
 }

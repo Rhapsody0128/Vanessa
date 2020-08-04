@@ -2,7 +2,6 @@
   <div id="menu">
     <h1 class="text-center mt-4 mb-4">菜單瀏覽</h1>
     <div v-for="(meal,index) in menu" :key="index">
-
     <div v-if="meal.type ==='特餐'" id="spcialmeal" class="row flex-wrap justify-content-center">
       <div class="col-10 col-lg-4">
         <img class="img-fluid img-thumbnail" :src=meal.src alt />
