@@ -202,7 +202,7 @@ export default {
             value: data.value,
             type: data.type,
             description: data.description,
-            src: 'process.env.VUE_APP_APIURL' + '/images/' + data.src,
+            src: process.env.VUE_APP_APIURL + '/images/' + data.src,
             popupActivo: false
           }
         })

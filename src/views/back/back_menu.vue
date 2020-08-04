@@ -65,9 +65,6 @@
           </vs-td>
           <vs-td v-if="tr.type==='特餐'" :data="tr.type">
             <span class='text'>{{tr.type}}</span>
-            <template slot="edit">
-              <b-form-select class="col-12 mt-3" v-model="tr.type" :options="selecttype"></b-form-select>
-            </template>
           </vs-td>
           <vs-td v-if="tr.type==='特餐'" :data="tr.src">
             <div>
@@ -84,7 +81,6 @@
           </vs-td>
           <vs-td v-if="tr.type==='特餐'" :data="tr">
             <vs-button class="d-block" @click="openConfirm(tr)" color="success" type="filled"><span class="btntext">儲存</span></vs-button>
-            <vs-button class="d-block" @click="openDeleteConfirm(tr)" color="danger" type="filled"><span class="btntext">刪除</span></vs-button>
           </vs-td>
         </vs-tr>
       </template>
