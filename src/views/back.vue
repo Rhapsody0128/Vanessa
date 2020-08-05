@@ -54,7 +54,10 @@
 export default {
   data: () => ({
     active: false
-  })
+  }),
+  mounted: function () {
+    this.$store.commit('boxshow')
+  }
 }
 </script>
 <style lang="stylus">

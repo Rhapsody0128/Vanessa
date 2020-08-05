@@ -245,6 +245,7 @@ export default {
     }
   },
   mounted: function () {
+    this.$store.commit('boxshow')
     this.slideleftstyle = {
       opacity: 0,
       marginRight: '50%'

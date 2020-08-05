@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div :style="bigscreenstyle" class="bigscreen">
+    <div v-if="boxshow" id='logoshow' class="bigscreen">
       <div class="logo-lg">
-        <vueSvgDraw class="logoanimate" file="./images/others/LOGO.svg" type="async" animTiming='EASE_OUT_BOUNCE' :duration="parseInt(300)" ref="vuesvg" pathTiming="EASE_OUT"></vueSvgDraw>
+        <vueSvgDraw file="./images/others/LOGO.svg" start="manual" type="async" :duration="parseInt(300)" ref="vuesvg" pathTiming="EASE_OUT"></vueSvgDraw>
       </div>
     </div>
     <div id="Status">
@@ -87,7 +87,6 @@ export default {
   data () {
     return {
       screenWidth: document.documentElement.clientWidth,
-      bigscreenstyle: {},
       logo: './images/others/LOGO.svg'
     }
   },
@@ -104,6 +103,9 @@ export default {
     },
     account () {
       return this.$store.getters.account
+    },
+    boxshow () {
+      return this.$store.getters.boxshow
     }
   },
   watch: {
@@ -121,22 +123,12 @@ export default {
     window.onresize = function () {
       _this.screenWidth = document.documentElement.clientWidth
     }
-    this.bigscreenstyle = {
-      opacity: '1',
-      transition: '0'
-    }
-    setTimeout(() => {
-      this.bigscreenstyle = {
-        transition: '1.5s',
-        opacity: '0'
-      }
-    }, 900)
   },
-
   components: {
     vueSvgDraw,
     Slide
-  }
+  },
+  props: ['logoshow']
 }
 </script>
 <style lang="stylus">
@@ -175,7 +167,8 @@ export default {
   z-index 99
   position absolute
   pointer-events: none;
-  // opacity 0
+  animation fadeout ease-in-out 3s
+  opacity 0
   .logo-lg{
     width: 950px;
     height: 950px;
@@ -209,7 +202,8 @@ export default {
   z-index 99
   position absolute
   pointer-events: none;
-  // opacity 0
+  opacity 0
+  animation fadeout ease-in-out 3s
   .logo-lg{
     width: 400px;
     height: 400px;
@@ -222,7 +216,15 @@ export default {
     left 0
     right 0
     z-index 4
+    }
   }
 }
+@keyframes fadeout {
+  0% {
+    opacity 1
+  }
+  100% {
+    opacity 0
+  }
 }
 </style>

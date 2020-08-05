@@ -113,6 +113,7 @@ export default {
     }
   },
   mounted: function () {
+    this.$store.commit('boxshow')
     this.axios.post(process.env.VUE_APP_APIURL + '/allmenu')
       .then(res => {
         this.menu = res.data.result.map(data => {

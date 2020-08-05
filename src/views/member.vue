@@ -349,6 +349,9 @@ export default {
         }
       }
     }
+  },
+  mounted: function () {
+    this.$store.commit('boxshow')
   }
 }
 </script>

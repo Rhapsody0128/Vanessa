@@ -226,10 +226,10 @@ export default {
   computed: {
     allvalue () {
       let allvalue = 0
-      var i = 0
       this.selected.forEach(data => {
-        allvalue += (parseInt(data.value[i]) * parseInt(data.number[i]))
-        i++
+        for (let i = 0; i < data.value.length; i++) {
+          allvalue += (parseInt(data.value[i]) * parseInt(data.number[i]))
+        }
       })
       return allvalue
     }

@@ -145,6 +145,7 @@ export default {
     }
   },
   mounted: function () {
+    this.$store.commit('boxshow')
     this.axios.post(process.env.VUE_APP_APIURL + '/allmarket')
       .then(res => {
         this.market = res.data.result.map(data => {
