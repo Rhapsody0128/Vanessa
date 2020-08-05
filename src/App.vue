@@ -202,13 +202,13 @@ export default {
   z-index 99
   position absolute
   pointer-events: none;
-  opacity 0
+  opacity 1
   animation fadeout ease-in-out 3s
   .logo-lg{
-    width: 400px;
-    height: 400px;
-    margin: auto
-    margin-top: 4.5rem;
+    width: 470px;
+    height: 470px;
+    margin-top: -10.5%;
+    margin-left: -9%
     pointer-events: none;
     position absolute
     top 0
