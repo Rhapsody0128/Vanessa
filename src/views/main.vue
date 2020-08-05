@@ -273,11 +273,10 @@ export default {
       width: 200px;
       height: 200px;
       transform-style:preserve-3d
-      transform: rotate3d(0, 0, 0, 0deg);
+      transform: rotate3d(0.45 ,0.5, 0.18, 60deg);
       margin: auto;
       margin-top: 10rem;
       border-radius: 50%;
-      font-family: '微軟正黑體';
       pointer-events: none;
       transition: 1.5s
   }

@@ -1,6 +1,6 @@
 <template>
   <div id="market">
-    <h1 class="text-center mt-4 mb-4">購物廣場</h1>
+    <h1 class="text-center mt-4 mb-4 bigtitle">購物廣場</h1>
     <div class="row justify-content-center m-0">
       <div class="col-10 col-lg-2 ">
         <b-form-group>
@@ -173,8 +173,8 @@ export default {
     height 80%
   }
   .itempic{
-    width 10rem
-    height 10rem
+    width 8rem
+    height 8rem
     img{
       border-radius:50%
       width 100%

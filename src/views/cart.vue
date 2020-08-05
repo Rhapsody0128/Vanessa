@@ -1,6 +1,6 @@
 <template>
   <div id="cart">
-    <h1 class="text-center mt-4 mb-4">購物車</h1>
+    <h1 class="text-center mt-4 mb-4 bigtitle">購物車</h1>
     <div :style="allstyle" class="container all">
       <div :style="cartstyle" class="cart">
         <h2 class="text-center mt-4 mb-4 title-lg">未送出訂單</h2>

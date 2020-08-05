@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <h1 class="text-center mt-4 mb-4">菜單瀏覽</h1>
+    <h1 class="text-center mt-4 mb-4 bigtitle">菜單瀏覽</h1>
     <div v-for="(meal,index) in menu" :key="index">
     <div v-if="meal.type ==='特餐'" id="spcialmeal" class="row flex-wrap justify-content-center">
       <div class="col-10 col-lg-4">
@@ -146,8 +146,8 @@ export default {
     bottom -1px
   }
   .mealpic{
-    width 10rem
-    height 10rem
+    width 9rem
+    height 9rem
     img{
       border-radius:50%
       width 100%
@@ -157,8 +157,8 @@ export default {
     }
   }
   .mealdes{
-    width 8rem
-    height 8rem
+    width 7rem
+    height 7rem
     padding 1rem
     margin auto
     }

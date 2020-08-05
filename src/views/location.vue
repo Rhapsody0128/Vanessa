@@ -1,6 +1,6 @@
 <template>
 <div id="location">
-<h1 class="text-center mt-4 mb-4">店家資訊</h1>
+<h1 class="text-center mt-4 mb-4 bigtitle">店家資訊</h1>
   <div class="container-fluid p-0 m-0">
     <div class="row m-0 p-0">
       <div class="col-12 p-0 m-0">

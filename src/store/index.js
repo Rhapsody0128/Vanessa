@@ -9,6 +9,9 @@ export default new Vuex.Store({
     screenWidth: 0,
     name: '',
     account: ''
+    bigscreenstyle:{
+      
+    }
   },
   getters: {
     screenWidth (state) {

@@ -5,7 +5,7 @@
         <div class="col">
             <vs-table class='table' multiple v-model="selected" :data="datas">
               <template slot="header">
-                <h1 class="title text-center">訂單資訊</h1>
+                <h1 class="title-lg text-center">訂單資訊</h1>
               </template>
               <template slot="thead">
                 <vs-th sort-key="account" class="item ">帳號</vs-th>
@@ -19,14 +19,14 @@
                   <vs-td class="border" v-if="!data[indextr].finish" :data="data[indextr].account">
                     <span class="text">{{data[indextr].account}}</span>
                   </vs-td>
-                  <vs-td class="border" v-if="!data[indextr].finish" :data="data[indextr].title">
-                    <span v-for="(title,index) in data[indextr].title" :key="index" class="text">{{title}}<br><br></span>
+                  <vs-td class="border tableform" v-if="!data[indextr].finish" :data="data[indextr].title">
+                    <div v-for="(title,index) in data[indextr].title" :key="index" class="text">{{title}}<br></div>
                   </vs-td>
-                  <vs-td class="border" v-if="!data[indextr].finish" :data="data[indextr].number">
-                    <span v-for="(number,index) in data[indextr].number" :key="index" class="text">{{number}}<br><br></span>
+                  <vs-td class="border tableform" v-if="!data[indextr].finish" :data="data[indextr].number">
+                    <div v-for="(number,index) in data[indextr].number" :key="index" class="text">{{number}}<br></div>
                   </vs-td>
-                  <vs-td class="border" v-if="!data[indextr].finish" :data="data[indextr].value">
-                    <span v-for="(value,index) in data[indextr].value" :key="index" class="text">{{value}}<br><br></span>
+                  <vs-td class="border tableform" v-if="!data[indextr].finish" :data="data[indextr].value">
+                    <div v-for="(value,index) in data[indextr].value" :key="index" class="text">{{value}}<br></div>
                   </vs-td>
                   <vs-td v-if="!data[indextr].finish" :data="data[indextr].id">
                     <span class="text">{{data[indextr].id}}</span>
@@ -34,7 +34,7 @@
                 </vs-tr>
               </template>
             </vs-table>
-            <h4 class="text-right">所選定單總價為:{{allvalue}}元</h4>
+            <h4 class="text-right item">所選定單總價為:{{allvalue}}元</h4>
             <div class="d-flex mt-3 justify-content-center mb-5">
               <div class="col-lg-3 col-4 d-flex justify-content-center">
                 <vs-button @click="openConfirm()" color="primary" type="filled">結案</vs-button>
@@ -67,13 +67,13 @@
                     <span  class="text">{{data[indextr].account}}</span>
                   </vs-td>
                   <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].title">
-                    <span  v-for="(title,index) in data[indextr].title" :key="index" class="text">{{title}}<br><br></span>
+                    <span v-for="(title,index) in data[indextr].title" :key="index" class="text col-12">{{title}}<br><br></span>
                   </vs-td>
                   <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].number">
-                    <span  v-for="(number,index) in data[indextr].number" :key="index" class="text">{{number}}<br><br></span>
+                    <span v-for="(number,index) in data[indextr].number" :key="index" class="text col-12">{{number}}<br><br></span>
                   </vs-td>
                   <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].value">
-                    <span  v-for="(value,index) in data[indextr].value" :key="index" class="text">{{value}}<br><br></span>
+                    <span v-for="(value,index) in data[indextr].value" :key="index" class="text col-12">{{value}}<br><br></span>
                   </vs-td>
                   <vs-td v-if="data[indextr].finish" :data="data[indextr].id">
                     <span  class="text">{{data[indextr].id}}</span>
@@ -280,4 +280,14 @@ export default {
     opacity 0
   }
 }
+.tableform{
+  span{
+    display flex !important
+    flex-wrap wrap !important
+    .text{
+      width 100%
+    }
+  }
+}
+
 </style>

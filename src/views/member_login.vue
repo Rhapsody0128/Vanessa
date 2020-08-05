@@ -1,6 +1,6 @@
 <template>
   <div id="member_login">
-    <h1 class="text-center mt-4 mb-4">會員專區</h1>
+    <h1 class="text-center mt-4 mb-4 bigtitle">會員專區</h1>
     <div :style="allstyle" class="container all">
       <form :style="orderstyle" class="order">
         <fieldset class="p-2 fieldset m-2 m-lg-5">
