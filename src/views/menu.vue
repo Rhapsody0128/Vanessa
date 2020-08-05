@@ -147,20 +147,20 @@ export default {
     bottom -1px
   }
   .mealpic{
-    width 9rem
-    height 9rem
+    width 8rem
+    height 8rem
     img{
       border-radius:50%
       width 100%
       height 100%
       object-fit cover
-      padding 1rem
+      padding 0.5rem
     }
   }
   .mealdes{
     width 7rem
-    height 7rem
-    padding 1rem
+    height 4rem
+    padding 0.5rem
     margin auto
     }
     @media (min-width : 768px) {
@@ -171,7 +171,7 @@ export default {
       .mealdes{
       width 12rem
       height 12rem
-      font-size 1.2rem
+      font-size 1.6rem
       }
     }
     .fade-enter-active, .fade-leave-active {

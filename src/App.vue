@@ -170,10 +170,10 @@ export default {
   animation fadeout ease-in-out 3s
   opacity 0
   .logo-lg{
-    width: 950px;
-    height: 950px;
+    width: 970px;
+    height: 970px;
     margin: auto
-    margin-top: -3rem;
+    margin-top: -4.3rem;
     pointer-events: none;
     position absolute
     top 0

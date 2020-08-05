@@ -66,14 +66,14 @@
                   <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].account">
                     <span  class="text">{{data[indextr].account}}</span>
                   </vs-td>
-                  <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].title">
-                    <span v-for="(title,index) in data[indextr].title" :key="index" class="text col-12">{{title}}<br><br></span>
+                  <vs-td class="border tableform" v-if="data[indextr].finish" :data="data[indextr].title">
+                    <div v-for="(title,index) in data[indextr].title" :key="index" class="text">{{title}}<br></div>
                   </vs-td>
-                  <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].number">
-                    <span v-for="(number,index) in data[indextr].number" :key="index" class="text col-12">{{number}}<br><br></span>
+                  <vs-td class="border tableform" v-if="data[indextr].finish" :data="data[indextr].number">
+                    <div v-for="(number,index) in data[indextr].number" :key="index" class="text">{{number}}<br></div>
                   </vs-td>
-                  <vs-td class="border" v-if="data[indextr].finish" :data="data[indextr].value">
-                    <span v-for="(value,index) in data[indextr].value" :key="index" class="text col-12">{{value}}<br><br></span>
+                  <vs-td class="border tableform" v-if="data[indextr].finish" :data="data[indextr].value">
+                    <div v-for="(value,index) in data[indextr].value" :key="index" class="text">{{value}}<br></div>
                   </vs-td>
                   <vs-td v-if="data[indextr].finish" :data="data[indextr].id">
                     <span  class="text">{{data[indextr].id}}</span>
@@ -86,7 +86,7 @@
                 <vs-button @click="openDeleteConfirm()" color="danger" type="filled">刪除</vs-button>
               </div>
               <div class="col-lg-3 col-6 d-flex justify-content-center">
-                <vs-button @click='changetoggle' color="success" type="filled">已結案訂單</vs-button>
+                <vs-button @click='changetoggle' color="success" type="filled">待處理訂單</vs-button>
               </div>
             </div>
         </div>
