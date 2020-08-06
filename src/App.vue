@@ -200,21 +200,22 @@ export default {
   width 100%
   height 100%
   z-index 99
-  position absolute
+  position fixed
   pointer-events: none;
   opacity 0
   animation fadeout ease-in-out 3s
   .logo-lg{
-    width: 470px;
-    height: 470px;
-    margin-top: -10.5%;
-    margin-left: -9%
+    width: 100%;
+    height: 30rem;
+    margin-top: -15.5%;
+    margin auto
+    background red
     pointer-events: none;
     position absolute
     top 0
     right 0
     left 0
-    right 0
+    bottom  0
     z-index 4
     }
   }
