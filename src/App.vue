@@ -209,7 +209,6 @@ export default {
     height: 30rem;
     margin-top: -15.5%;
     margin auto
-    background red
     pointer-events: none;
     position absolute
     top 0
