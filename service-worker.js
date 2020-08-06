@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.e2129e8bf10f44996fa53c3eb1f3466d.js"
+  "precache-manifest.5944f419c62e1fa384bc577df4b9615e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vanessa"});
