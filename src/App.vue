@@ -165,7 +165,7 @@ export default {
   width 100%
   height 100%
   z-index 99
-  position absolute
+  position fixed
   pointer-events: none;
   animation fadeout ease-in-out 3s
   opacity 0
