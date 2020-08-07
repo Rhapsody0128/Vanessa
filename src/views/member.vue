@@ -170,7 +170,7 @@
             </div>
           </div>
         </fieldset>
-        <button href="#" @click="changetoggle" class="btn btn-light toggle">已有帳號</button>
+        <button @click="changetoggle" class="btn btn-light toggle">已有帳號</button>
       </form>
     </div>
   </div>
@@ -386,6 +386,7 @@ export default {
       top 0
       bottom 0
       margin auto
+      transform: rotateY(0deg) translateZ(400px);
       transition 0.5s
     }
     .registering{
