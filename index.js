@@ -114,7 +114,8 @@ app.use(cors({
 }))
 // ---獲取圖片
 app.get('/images/:src', async (req, res) => {
-  
+  res.pipe(request('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)).pipe(res)
+  console.log(res);
   if (process.env.FTP === 'false') {
     const path = process.cwd() + '/images/' + req.params.src
     const exists = fs.existsSync(path)
@@ -127,7 +128,7 @@ app.get('/images/:src', async (req, res) => {
     }
   } else {
     res.pipe(request('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)).pipe(res)
-    // res.redirect('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)
+    res.redirect('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)
   }
 })
 // ----註冊
