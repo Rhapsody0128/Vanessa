@@ -245,6 +245,9 @@ export default {
     }
   },
   mounted: function () {
+    this.axios.post(process.env.VUE_APP_APIURL + '/getusercartorder', {
+      account: this.account
+    })
     this.$store.commit('boxshow')
     this.slideleftstyle = {
       opacity: 0,
