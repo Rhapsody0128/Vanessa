@@ -125,6 +125,7 @@ app.get('/images/:src', async (req, res) => {
       res.send({ success: false, message: '找不到圖片' })
     }
   } else {
+    // res.pipe(request('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)).pipe(res)
     res.redirect('https://' + process.env.FTP_HOST + '/' + process.env.FTP_USER + '/' + req.params.src)
   }
 })
